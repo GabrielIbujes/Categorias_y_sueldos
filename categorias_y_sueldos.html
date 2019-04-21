@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Sueldos_y_categorias</title>
+</head>
+<body>
+    <script>
+        let Sueld,NuevSueld,Cat;
+        Sueld=parseInt(prompt("Ingrese su sueldo basico"));
+        Cat=parseInt(prompt("Ingrese su categoria"));
+
+        switch(Cat){
+		case 1:
+			NuevSueld = Sueld + (Sueld * 0.15);
+		break;
+		case 2:
+			NuevSueld = Sueld + (Sueld * 0.10);
+		break;
+		case 3:
+			NuevSueld = Sueld + (Sueld * 0.08);
+		break;
+		case 4:
+			NuevSueld = Sueld + (Sueld * 0.07);
+		break;
+		default:
+            alert(`Categoria erronea => `)
+		break;
+	}	
+    
+alert(`Su sueldo pasado fue =>  ${Sueld}`)
+alert(`La categoria en que se encuentra es =>  ${Cat}`)
+alert(`El nuevo sueldo es =>  ${NuevSueld}`)
+        
+        
+    </script>
+</body>
+</html>
